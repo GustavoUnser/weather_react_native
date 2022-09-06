@@ -1,12 +1,14 @@
 import React from "react"
-import { Text, View } from "react-native"
+import { SafeAreaView, Text } from "react-native"
+import ForecastItem from "./components/item"
 
 const Weather = () => {
-    return (
-        <View>
-            <Text>Teste</Text>
-        </View>
-    )
+  return (
+    <SafeAreaView>
+      <Text>Teste</Text>
+      <ForecastItem />
+    </SafeAreaView>
+  )
 }
 
 export default Weather
