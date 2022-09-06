@@ -12,5 +12,15 @@ export interface Weather {
   wind_speedy: string,
   sunrise: string,
   sunset: string,
-  forecast: string
+  forecast: Forecast[]
 }
+
+export interface Forecast {
+  date: string,
+  weekday: string,
+  min: number,
+  max: number,
+  description: string,
+  condition: string,
+}
+
